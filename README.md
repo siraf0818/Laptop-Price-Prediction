@@ -100,8 +100,10 @@ Pada tahap *Data Understanding* dilakukan analisis data eksploratif untuk mendap
   ![image-20230711192726048](https://github.com/siraf0818/Laptop-Price-Prediction/assets/81822076/f1dfd3d9-395a-4a8f-be18-f95e1b56b553)
   
   ![image-20931](https://github.com/siraf0818/Laptop-Price-Prediction/assets/81822076/495b85ab-c34e-4ebc-baf4-2fdaba13570e)
+  
+  <div style="text-align:center">Gambar 2. Visualisasi Data pada Dataset</div>
 
-<div style="text-align:center">Gambar 2. Visualisasi Data pada Dataset</div>
+
 
 ## Data Preparation
 
