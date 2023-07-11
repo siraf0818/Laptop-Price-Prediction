@@ -97,7 +97,9 @@ Pada tahap *Data Understanding* dilakukan analisis data eksploratif untuk mendap
   
   Sedangkan contoh visualisasi dari sebaran data ditunjukan pada Gambar 2. Visualisasi yang ditunjukan pada Gambar 2 menunjukan bahwa ada ketidakseimbangan data pada kolom CPU, Storage, Weight, dan RAM.
   
-  ![image-20230711192726048](C:\Users\HP\AppData\Roaming\Typora\typora-user-images\image-20230711192726048.png)
+  ![image-20230711192726048](https://github.com/siraf0818/Laptop-Price-Prediction/assets/81822076/f1dfd3d9-395a-4a8f-be18-f95e1b56b553)
+  
+  ![image-20931](https://github.com/siraf0818/Laptop-Price-Prediction/assets/81822076/495b85ab-c34e-4ebc-baf4-2fdaba13570e)
 
 <div style="text-align:center">Gambar 2. Visualisasi Data pada Dataset</div>
 
@@ -141,11 +143,11 @@ Pada tahap ini dilakukan proses pelatihan untuk mendapatkan model dengan perform
    
 2. Menggunakan `ColumnTransformer` untuk mengubah data kategorik menjadi numerik
 
-   Pada proyek ini masih mempertahankan kolom kategorikal yaitu Manufacturer, GPU, dan OS. Sebab pada saat ingin mempredikasi harga laptop, calon pembeli tentunya akan memilih Manufacturer, GPU,dan OS dalam bentuk kategori bukan numerik. Oleh karena itu kita ubah data kategorik menjadi numberik menggunkan teknik OneHotEncoding. Tapi sebelum dilakukan teknik `OneHotEncoding` dilakukan harus menampilkan indeks dari masing-masing kolom menggunakan fungsi `enumerate()`. Selanjutkan dilakukan proses `ColumnTransformer`.
+   Pada proyek ini masih mempertahankan kolom kategorikal yaitu Manufacturer, GPU, dan OS. Sebab pada saat ingin mempredikasi harga laptop, calon pembeli tentunya akan memilih Manufacturer, GPU,dan OS dalam bentuk kategori bukan numerik. Oleh karena itu kita ubah data kategorik menjadi numberik menggunkan teknik OneHotEncoding. Tapi sebelum dilakukan teknik `OneHotEncoding` dilakukan harus menampilkan indeks dari masing-masing kolom menggunakan fungsi `enumerate()`. Dan selanjutnya dilakukan proses `ColumnTransformer`.
 
 3. Membuat pipeline untuk menggabungkan data numerik dan kategorik
 
-   Hasil penggunakan teknik `ColumnTransformer` disimpan dalam objek feature. Selanjutnya dilakukan proses pipeline untuk menggabungkan dan meng-optimasi kolom numerikal dan kategorikan agar dapat di proses oleh algoritma machine learning. 
+   Hasil penggunakan teknik `ColumnTransformer` disimpan dalam objek feature. Selanjutnya dilakukan proses pipeline untuk menggabungkan dan meng-optimasi kolom numerikal dan kategorikal agar dapat di proses oleh algoritma machine learning. 
 
 4. Setelah dilakukan proses pelatihan oleh Lazy Predict, diperoleh algoritma dengan performa terbaik yaitu :
 
@@ -215,7 +217,7 @@ Pada tahap ini dilakukan proses pelatihan untuk mendapatkan model dengan perform
   - SSR : Kuadrat dari selisih nilai Y prediksi dengan nilai rata-rata Y = ∑ (Ypred – Yrata-rata)²
   - SST : Kuadrat dari selisih nilai Y aktual dengan nilai rata-rata Y = ∑ (Yaktual – Yrata-rata)²
 
-- Setelah melalui tahap pelatihan dan evaluasi menggunakan MSE, RMSE, dan R Square, diperoleh hasil bahwa algoritma **XGBRegressor** memiliki performa yang paling baik seperti ditunjukan Tabel 3. 
+- Setelah melalui tahap pelatihan dan evaluasi menggunakan MSE, RMSE, dan R Square, diperoleh hasil bahwa algoritma **XGBRegressor** memiliki performa seperti ditunjukan Tabel 3. 
 
   <div style="text-align:center">Tabel 3. Hasil Pengujian dari 3 Algoritma Teratas</div>
 
@@ -245,7 +247,7 @@ Pada tahap ini dilakukan proses pelatihan untuk mendapatkan model dengan perform
 
 1. Berdasarkan hasil pengukuran, terdapat 7 kolom atau fitur yang mempengaruhi *Price* yaitu Screen Size, CPU, RAM, Storage, Weight, ScreenX, dan ScreenX.
 2. Proses preprocessing yang dilakukan adalah dengan melakukan manipulasi data seperti mengabungkan ScreenX dan ScreenX untuk menghasilkan fitur baru yaitu PPI. Menghapus data yang tidak memiliki korelasi yang signifikan dengan *Price*, dan mengubah format tipe data pada setiap kolom yang memiliki korelasi.
-3. Berdasarkan hasil pengujian model, diperoleh hasil bahwa algoritma XGBRegressor memiliki performa yang paling baik yaitu memiliki nilai RMSE sebesar 0.4559351 dan R2 Score sebesar 0.4463952.
+3. Berdasarkan hasil pengujian model, diperoleh hasil bahwa algoritma XGBRegressor memiliki performa yang baik dengan nilai RMSE sebesar 0.4559351 dan R2 Score sebesar 0.4463952.
 4. Meningkatkan performa model dapat dilakukan dengan menambahkan hyperparameter.  Pemilihan hyperparameter yang menghasilkan performa terbaik dapat dilakukan menggunakan teknik Grid Search.
 5. Dataset yang digunakan memiliki rentang jangkauan yang berbeda (imbalace), oleh sebab itu agar performa model lebih baik maka perlu dilakukan teknik SMOTE untuk menangani imbalance dataset.
 
