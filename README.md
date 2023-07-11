@@ -9,14 +9,14 @@
 
 Laptop di era digital saat ini menjadi perangkat yang sangat penting untuk mendukung pembelajaran dan pekerjaan. Menurut data dari Asosiasi Penyelenggara Jasa Internet Indonesia (APJII) tahun 2022, diperkirakan sekitar 85,5% penduduk Indonesia memiliki setidaknya satu laptop [1]. Bahkan lebih dari 60% penduduk memiliki lebih dari satu laptop. Harga laptop menjadi faktor yang sangat berpengaruh dalam keputusan pembelian seseorang. Oleh karena itu, kemampuan machine learning dalam memprediksi harga laptop menjadi sangat berharga bagi masyarakat yang ingin mencari laptop sesuai kebutuhan mereka.
 
-Telah banyak penelitian yang memiliki proyek memprediksi harga. Untuk membuat harga
-prediksi, algoritma regresi umumnya digunakan dalam penelitian. Penelitian [2] menyajikan metode untuk memprediksi harga laptop menggunakan metode Machine Learning dengan algoritma regresi dikonfigurasi dengan penyetelan hyper-parameter, yaitu XGBoost.
+Telah banyak penelitian yang membahas proyek memprediksi harga. Untuk membuat harga
+prediksi, algoritma regresi umumnya digunakan dalam penelitian-penelitian tersebut. Penelitian [2] menyajikan beberapa metode untuk memprediksi harga laptop menggunakan metode Machine Learning dengan algoritma regresi yaitu Random Forest Regressor, Gradient Boosting Regressor, dan XGBoost. Pada penelitian tersebut, algoritma XGBoost merupakan algoritma yang paling tinggi score R^2 nya yaitu sebesar 92.77%. Selanjutnya ada penelitian [3] yang menggunakan lima algoritma machine learning yang berbeda untuk memprediksi harga laptop, yaitu Random Forest Regression (RFR), Gradient Boosting Regression (GBR), Support Vector Regression (SVR), K-Nearest Neighbors Regression (KNN), dan Artificial Neural Networks (ANN). Untuk evaluation metrics yang digunakan adalah  Mean Squared Error (MSE), Mean Absolute Error (MAE), dan R-squared (R^2). Hasil dari penelitian tersebut adalah algoritma RFR merupakan algoritma terbaik dibandingkan dengan yang lainnya dengan nilai MSE sebesar 341.68, MAE sebesar 14.22, dan score R^2 sebesar 0.89.
 
-Untuk mengatasi permasalahan tersebut, metode Machine Learning diperlukan untuk memprediksi harga laptop berdasarkan parameternya yaitu spesifikasi laptop. Penulis menyajikan beberapa Machine Learning menggunakan algoritma regresi dalam proyek ini. Setelah pemodelan, algoritma dengan nilai akurasi tertinggi akan digunakan untuk memprediksi harga laptop. Dengan metode ini, diharapkan model yang dibuat dapat memprediksi harga laptop dengan minimum akurasi diatas 80%.
+Untuk mengatasi permasalahan tersebut, metode Machine Learning diperlukan untuk memprediksi harga laptop berdasarkan parameternya yaitu spesifikasi laptop. Penulis menyajikan beberapa Machine Learning menggunakan algoritma regresi dalam proyek ini. Setelah pemodelan, algoritma dengan nilai akurasi tertinggi akan digunakan untuk memprediksi harga laptop. Dengan metode ini, diharapkan model yang dibuat dapat memprediksi harga laptop dengan nilai akurasi yang tinggi.
 
 ## Business Understanding
 
-Setiap tahun terdapat berbagai jenis tipe *laptop* dengan fitur yang bermacam-macam. Umumnya *laptop* tipe tertentu meng-*upgrade* perangkatnya dari segi penambahan kapasitas RAM, kartu grafis dan kapasitas penyimpanan, serta kecepatan prosesor. Penambahan fitur pada *laptop* akan mempengaruhi kenaikan harga *laptop* tersebut. Oleh karena itu calon konsumen harus memahami spesifikasi *laptop* yang akan dibeli disesuaikan dengan budget yang dimiliki. Diperlukan sebuah model *machine learning* yang dapat memprediksi harga *laptop* dengan akurat. Sehingga calon konsumen dapat menyiapkan budget yang digunakan untuk membeli *laptop* dengan spesifikasi yang dia inginkan.
+Setiap tahun terdapat berbagai jenis tipe *laptop* dengan fitur yang bermacam-macam. Umumnya *laptop* tipe tertentu meng-*upgrade* perangkatnya dari segi penambahan kapasitas RAM, kartu grafis dan kapasitas penyimpanan, serta kecepatan prosesor. Penambahan fitur pada *laptop* akan mempengaruhi kenaikan harga *laptop* tersebut. Oleh karena itu calon konsumen harus memahami spesifikasi *laptop* yang akan dibeli disesuaikan dengan budget yang dimiliki. Diperlukan sebuah model *machine learning* yang dapat memprediksi harga *laptop* dengan akurat. Sehingga calon konsumen dapat menyiapkan budget yang diperlukan untuk membeli *laptop* dengan spesifikasi yang dia inginkan.
 
 #### Problem Statements
 
@@ -58,7 +58,7 @@ Dataset yang digunakan pada proyek ini diperoleh dari Kaggle. Silahkan kunjungi 
 2. **Model Name**: Nama model *laptop*
 3. **Category**: Kategori *laptop*
 4. **Screen Size**: Ukuran layar dalam Inchi
-5. **Screen**: Model layar yang digunakan
+5. **Screen**: Model layar yang digunakan (Variabel ini dipecah menjadi ScreenX dan ScreenY)
 6. **CPU**: Prosesor *laptop*
 7. **RAM**: RAM *laptop*
 8. **Storage**: Kapasitas penyimpanan *laptop*
@@ -89,13 +89,13 @@ Pada tahap *Data Understanding* dilakukan analisis data eksploratif untuk mendap
 
 - Melakukan manipulasi data untuk mendapatkan variabel atau fitur baru seperti menggabungkan kolom Resolution X dan Resolution Y untuk mendapatkan nilai PPI (*Pixel Per Inch*).
 
-- Melakukan visualisasi data untuk mengetahui korelasi dan sebaran data. Visualisasi korelasi antar kolom digambarkan dalam heatmap seperti ditunjukan Gambar 1. Berdasarkan diagaram heatmap Gambar 1 diketahui bahawa terdapat beberapa kolom seperti Weight, CPU, RAM, dll yang berkorelasi dengan kolom 'Prize'.  Semakin mendekati nilai 1 maka korelasi semakin tinggi. Kemudian hasil visualisasi heatmap hanya menampilkan korelasi pada kolom yang memberikan data numerikal, sedangkan kolom yang memberikan hasil kategorikal tidak dapat diketahui korelasinya.
+- Melakukan visualisasi data untuk mengetahui korelasi dan sebaran data. Visualisasi korelasi antar kolom digambarkan dalam heatmap seperti ditunjukan Gambar 1. Berdasarkan diagaram heatmap Gambar 1 diketahui bahawa terdapat beberapa kolom seperti Weight, CPU, RAM, dll yang berkorelasi dengan kolom 'Price'.  Semakin mendekati nilai 1 maka korelasi semakin tinggi. Kemudian hasil visualisasi heatmap hanya menampilkan korelasi pada kolom yang memberikan data numerikal, sedangkan kolom yang memberikan hasil kategorikal tidak dapat diketahui korelasinya.
 
   ![image-20230711192516323](https://github.com/siraf0818/Laptop-Price-Prediction/assets/81822076/0a91c485-fa59-4e76-82e0-06112ab4f131)
   
   <div style="text-align:center">Gambar 1. Visualisasi Korelasi Data dengan Heatmap</div>
   
-  Sedangkan contoh visualisasi dari sebaran data ditunjukan pada Gambar 2. Visualisasi yang ditunjukan pada Gambar 2 menunjukan bahwa ada ketidakseimbangan data pada kolom CPU, Storage, Weight, dan RAM.
+  Sedangkan contoh visualisasi dari sebaran data ditunjukan pada Gambar 2. Visualisasi yang ditunjukan pada Gambar 2 menunjukan bahwa ada ketidakseimbangan data pada kolom CPU, Storage, Weight, RAM, dan PPI.
   
   ![image-20230711192726048](https://github.com/siraf0818/Laptop-Price-Prediction/assets/81822076/f1dfd3d9-395a-4a8f-be18-f95e1b56b553)
   
@@ -113,7 +113,7 @@ Teknik data preparation yang dilakukan pada proyek ini adalah sebagai berikut :
 
 2. Data Splitting: Membagi dataset menjadi data latih dan data uji. Pada proyek ini perbandingan data latih dan data uji adalah 85 : 15.
 
-3. Menampilkan informasi jumlah data latih dan data uji. Jumlah data latih adalah 830, sedangkan data uji terdat 147data. jumlah data fitur yang dipakai untuk pelatihan adalah 8.
+3. Menampilkan informasi jumlah data latih dan data uji. Jumlah data latih adalah 830 data, sedangkan data uji terdapat 147 data. Jumlah data fitur yang dipakai untuk pelatihan adalah 8.
 
    
 
@@ -247,7 +247,7 @@ Pada tahap ini dilakukan proses pelatihan untuk mendapatkan model dengan perform
 
 ## Conclussion
 
-1. Berdasarkan hasil pengukuran, terdapat 7 kolom atau fitur yang mempengaruhi *Price* yaitu Screen Size, CPU, RAM, Storage, Weight, ScreenX, dan ScreenX.
+1. Berdasarkan hasil pengukuran, terdapat 8 kolom atau fitur yang mempengaruhi *Price* yaitu Manufacturer, CPU, RAM, Storage, GPU, OS, Weight, dan PPI.
 2. Proses preprocessing yang dilakukan adalah dengan melakukan manipulasi data seperti mengabungkan ScreenX dan ScreenX untuk menghasilkan fitur baru yaitu PPI. Menghapus data yang tidak memiliki korelasi yang signifikan dengan *Price*, dan mengubah format tipe data pada setiap kolom yang memiliki korelasi.
 3. Berdasarkan hasil pengujian model, diperoleh hasil bahwa algoritma XGBRegressor memiliki performa yang baik dengan nilai RMSE sebesar 0.4559351 dan R2 Score sebesar 0.4463952.
 4. Meningkatkan performa model dapat dilakukan dengan menambahkan hyperparameter.  Pemilihan hyperparameter yang menghasilkan performa terbaik dapat dilakukan menggunakan teknik Grid Search.
@@ -257,7 +257,15 @@ Pada tahap ini dilakukan proses pelatihan untuk mendapatkan model dengan perform
 
 [1]   APJII, “Laporan Survei Internet APJII 2021 - 2021,” 2022. [Online]. Available: [https://apjii.or.id/survei](https://apjii.or.id/survei).
 
-[2]   Astri Dahlia Siburian, Daniel Ryan Hamonangan Sitompul, Stiven Hamonangan Sinurat Andreas Situmorang, Ruben, Dennis Jusuf Ziegel, Evta Indra, “Laptop Price Prediction with Machine Learning Using Regression Algorithm,” 2022.
+[2]   Astri Dahlia Siburian, Daniel Ryan Hamonangan Sitompul, Stiven Hamonangan Sinurat Andreas Situmorang, Ruben, Dennis Jusuf Ziegel, Evta Indra, “Laptop Price Prediction with Machine Learning Using Regression Algorithm,” 2022, jurnal.unprimdn.ac.id: [2850](jurnal.unprimdn.ac.id/index.php/JUSIKOM/article/view/2850).
+
+[3]   Kolla,  Venkata Ravi Kiran, "Forecasting Laptop Prices: A Comparative  Study of Machine Learning Algorithms for Predictive Modeling," 2016,  SSRN: [4413726](https://papers.ssrn.com/sol3/Delivery.cfm/SSRN_ID4413726_code5831378.pdf?abstractid=4413726&mirid=1).
+
+
+
+
+
+
 
 
 
