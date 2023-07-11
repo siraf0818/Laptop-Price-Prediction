@@ -10,12 +10,9 @@
 Laptop di era digital saat ini menjadi perangkat yang sangat penting untuk mendukung pembelajaran dan pekerjaan. Menurut data dari Asosiasi Penyelenggara Jasa Internet Indonesia (APJII) tahun 2022, diperkirakan sekitar 85,5% penduduk Indonesia memiliki setidaknya satu laptop [1]. Bahkan lebih dari 60% penduduk memiliki lebih dari satu laptop. Harga laptop menjadi faktor yang sangat berpengaruh dalam keputusan pembelian seseorang. Oleh karena itu, kemampuan machine learning dalam memprediksi harga laptop menjadi sangat berharga bagi masyarakat yang ingin mencari laptop sesuai kebutuhan mereka.
 
 Telah banyak penelitian yang memiliki proyek memprediksi harga. Untuk membuat harga
-prediksi, algoritma regresi umumnya digunakan dalam penelitian. Penelitian [2] menyajikan metode
-untuk memprediksi harga laptop menggunakan metode Machine Learning dengan algoritma regresi
-dikonfigurasi dengan penyetelan hyper-parameter, yaitu XGBoost.
+prediksi, algoritma regresi umumnya digunakan dalam penelitian. Penelitian [2] menyajikan metode untuk memprediksi harga laptop menggunakan metode Machine Learning dengan algoritma regresi dikonfigurasi dengan penyetelan hyper-parameter, yaitu XGBoost.
 
-Untuk mengatasi permasalahan tersebut, metode Machine Learning diperlukan untuk memprediksi
-harga laptop berdasarkan parameternya yaitu spesifikasi laptop. Penulis menyajikan beberapa Machine Learning menggunakan algoritma regresi dalam proyek ini. Setelah pemodelan, algoritma dengan nilai akurasi tertinggi akan digunakan untuk memprediksi harga laptop. Dengan metode ini, diharapkan model yang dibuat dapat memprediksi harga laptop dengan minimum akurasi diatas 80%.
+Untuk mengatasi permasalahan tersebut, metode Machine Learning diperlukan untuk memprediksi harga laptop berdasarkan parameternya yaitu spesifikasi laptop. Penulis menyajikan beberapa Machine Learning menggunakan algoritma regresi dalam proyek ini. Setelah pemodelan, algoritma dengan nilai akurasi tertinggi akan digunakan untuk memprediksi harga laptop. Dengan metode ini, diharapkan model yang dibuat dapat memprediksi harga laptop dengan minimum akurasi diatas 80%.
 
 ## Business Understanding
 
@@ -25,9 +22,9 @@ Setiap tahun terdapat berbagai jenis tipe *laptop* dengan fitur yang bermacam-ma
 
 Tujuan yang hendak dicapai dari proyek ini adalah sebagai berikut
 
-1. Mengetahui fitur yang paling berkorelasi dengan penentuan harga *laptop*.
-2. Membuat model *machine learning* yang dapat memprediksi harga *laptop*.
-3. Memilih model *machine learning* yang menghasilkan prediksi paling akurat berdasarkan proses *preprocessing* yang dilakukan.
+1. Fitur-fitur apa saja yang paling berpengaruh terhadap harga *laptop* ?
+2. Bagaimana proses *Pre-Processing* yang dilakukan agar menghasilkan model *machine learning* yang akurat.
+3. Bagaimana membuat atau memilih model *machine learning* yang memiliki akurasi terbaik dalam memprediksi harga *laptop* ?
 
 #### Goals
 
