@@ -16,7 +16,7 @@ Untuk mengatasi permasalahan tersebut, metode Machine Learning diperlukan untuk 
 
 ## Business Understanding
 
-Setiap tahun terdapat berbagai jenis tipe *laptop* dengan fitur yang bermacam-macam. Umumnya *laptop* tipe tertentu meng-*upgrade* perangkatnya dari segi penambahan kapasitas RAM, kartu grafis dan kapasitas penyimpanan, serta kecepatan prosesor. Penambahan fitur pada *laptop* akan mempengaruhi kenaikan harga *laptop* tersebut. Oleh karena itu calon konsumen harus memahami spesifikasi *laptop* yang akan dibeli disesuaikan dengan budget yang dimiliki. Diperlukan sebuah model *machine learning* yang dapat memprediksi harga *laptop* dengan akurat. Sehingga calon konsumen dapat menyiapkan budget yang digunakan untuk membeli *laptop* dengan spesifikasi yang dia diinginkan.
+Setiap tahun terdapat berbagai jenis tipe *laptop* dengan fitur yang bermacam-macam. Umumnya *laptop* tipe tertentu meng-*upgrade* perangkatnya dari segi penambahan kapasitas RAM, kartu grafis dan kapasitas penyimpanan, serta kecepatan prosesor. Penambahan fitur pada *laptop* akan mempengaruhi kenaikan harga *laptop* tersebut. Oleh karena itu calon konsumen harus memahami spesifikasi *laptop* yang akan dibeli disesuaikan dengan budget yang dimiliki. Diperlukan sebuah model *machine learning* yang dapat memprediksi harga *laptop* dengan akurat. Sehingga calon konsumen dapat menyiapkan budget yang digunakan untuk membeli *laptop* dengan spesifikasi yang dia inginkan.
 
 #### Problem Statements
 
@@ -39,7 +39,7 @@ Tujuan yang hendak dicapai dari proyek ini adalah sebagai berikut
 Solusi yang diajukan untuk menyelesaikan masalah yang telah diuraikan adalah sebagai berikut.
 
 1. Melakukan analisis deskriptif untuk mengetahui pola dan informasi yang tersimpan di data mengenai fitur atau spesifikasi yang mempengaruhi harga *laptop*.
-2. Melakukan proses *Data Manipulation* untuk menggabungkan kolom-kolom yang berpengaruh terhadap akurasi predisi harga *smartphone*
+2. Melakukan proses *Data Manipulation* untuk menggabungkan kolom-kolom yang berpengaruh terhadap akurasi predisi harga *laptop*
 3. Melakukan Proses Preprocessing seperti :
    - Mengecek *missing value* dan duplikasi data. Kebetulan dataset yang digunakan tidak ada *missing value* dan duplikasi data.
    - Menghapus kolom yang tidak berpengaruh terhadap prediksi harga.
