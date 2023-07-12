@@ -3,7 +3,7 @@
 **Anggota Kelompok :**
 
 1. Faris Adhi Laksana Yusuf	-	 3.34.21.3.09
-2. Febrian Giovanni           -   3.34.21.3.10
+2. Febrian Giovanni                 -   3.34.21.3.10
 
 ## Domain Proyek
 
