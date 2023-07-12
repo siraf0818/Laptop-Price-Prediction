@@ -93,7 +93,7 @@ Pada tahap *Data Understanding* dilakukan analisis data eksploratif untuk mendap
 
   <img width="1000" alt="heatmap" src="https://github.com/siraf0818/Laptop-Price-Prediction/assets/116758794/d7dbb96a-e9c5-4097-84b0-f737fafef2d8">
   
-  <div style="text-align:center, justify-content:center">Gambar 1. Visualisasi Korelasi Data dengan Heatmap</div>
+  <div style="text-align:center">Gambar 1. Visualisasi Korelasi Data dengan Heatmap</div>
   
   Sedangkan contoh visualisasi dari sebaran data ditunjukan pada Gambar 2. Visualisasi yang ditunjukan pada Gambar 2 menunjukan bahwa ada ketidakseimbangan data pada kolom CPU, Storage, Weight, RAM, dan PPI.
   
