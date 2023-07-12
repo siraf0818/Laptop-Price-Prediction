@@ -20,15 +20,15 @@ Setiap tahun terdapat berbagai jenis tipe *laptop* dengan fitur yang bermacam-ma
 
 #### Problem Statements
 
-Tujuan yang hendak dicapai dari proyek ini adalah sebagai berikut
+Tujuan yang hendak dicapai dari proyek ini adalah sebagai berikut :
 
 1. Fitur-fitur apa saja yang paling berpengaruh terhadap harga *laptop* ?
-2. Bagaimana proses *Pre-Processing* yang dilakukan agar menghasilkan model *machine learning* yang akurat.
+2. Bagaimana proses *Pre-Processing* yang dilakukan agar menghasilkan model *machine learning* yang akurat?
 3. Bagaimana membuat atau memilih model *machine learning* yang memiliki akurasi terbaik dalam memprediksi harga *laptop* ?
 
 #### Goals
 
-Tujuan yang hendak dicapai dari proyek ini adalah sebagai berikut 
+Tujuan yang hendak dicapai dari proyek ini adalah sebagai berikut :
 
 1. Mengetahui fitur yang paling berkorelasi dengan penentuan harga *laptop*.
 2. Membuat model *machine learning* yang dapat memprediksi harga *laptop*.
@@ -54,7 +54,7 @@ Solusi yang diajukan untuk menyelesaikan masalah yang telah diuraikan adalah seb
 
 Dataset yang digunakan pada proyek ini diperoleh dari Kaggle. Silahkan kunjungi tautan berikut [Laptop Price Prediction](https://www.kaggle.com/datasets/arnabchaki/laptop-price-prediction) untuk mengakses dataset yang dipakai. Adapun variabel-variabel yang terdapat pada dataset adalah sebagai berikut :
 
-1. **Manufacturer**: Nama brand *Laptop*
+1. **Manufacturer**: Nama brand *laptop*
 2. **Model Name**: Nama model *laptop*
 3. **Category**: Kategori *laptop*
 4. **Screen Size**: Ukuran layar dalam Inchi
@@ -63,8 +63,8 @@ Dataset yang digunakan pada proyek ini diperoleh dari Kaggle. Silahkan kunjungi 
 7. **RAM**: RAM *laptop*
 8. **Storage**: Kapasitas penyimpanan *laptop*
 9. **GPU**: Kartu grafis *laptop*
-10. **Operating System**: Sistem operasi *laptop*
-11. **Operating System Version**: Versi sistem operasi yang digunakan
+10. **Operating System**: OS yang digunakan pada *laptop*
+11. **Operating System Version**: Versi OS yang digunakan pada *laptop*
 12. **Weight**: Berat *laptop*
 13. **Price**: Harga *laptop* dalam mata uang india (INR)
 
@@ -83,11 +83,11 @@ Pada dataset, terdapat 6 fitur numerikal dan 7 fitur kategorikal. Ringkasan stat
 | 75%   | 15.60000        | 2.700000  | 8.000000  | 256.000000  | 2.300000   | 1.311570e+07 | 1920.000000 | 1080.000000 |
 | max   | 18.40000        | 3.600000  | 32.000000 | 512.000000  | 4.700000   | 5.423231e+07 | 3200.000000 | 2160.000000 |
 
-Pada tahap *Data Understanding* dilakukan analisis data eksploratif untuk mendapatkan wawasan tentang karakteristik data, memahami struktur data, dan mengidentifikasi potensi masalah atau kesalahan yang mungkin terjadi. Kegiatan Data Understanding yang dilakukan pada Proyek ini antara lain :
+Pada tahap *Data Understanding* dilakukan analisis data eksploratif untuk mendapatkan wawasan tentang karakteristik data, memahami struktur data, dan mengidentifikasi potensi masalah atau kesalahan yang mungkin terjadi. Kegiatan *Data Understanding* yang dilakukan pada Proyek ini antara lain :
 
 - Memberikan informasi seperti jumlah data, *missing value*, duplikasi data, korelasi antar kolom, dan sebaran data.
 
-- Melakukan manipulasi data untuk mendapatkan variabel atau fitur baru seperti menggabungkan kolom Resolution X dan Resolution Y untuk mendapatkan nilai PPI (*Pixel Per Inch*).
+- Melakukan manipulasi data untuk mendapatkan variabel atau fitur baru seperti menggabungkan kolom ScreenX dan ScreenY untuk mendapatkan nilai PPI (*Pixel Per Inch*).
 
 - Melakukan visualisasi data untuk mengetahui korelasi dan sebaran data. Visualisasi korelasi antar kolom digambarkan dalam heatmap seperti ditunjukan Gambar 1. Berdasarkan diagaram heatmap Gambar 1 diketahui bahawa terdapat beberapa kolom seperti Weight, CPU, RAM, dll yang berkorelasi dengan kolom 'Price'.  Semakin mendekati nilai 1 maka korelasi semakin tinggi. Kemudian hasil visualisasi heatmap hanya menampilkan korelasi pada kolom yang memberikan data numerikal, sedangkan kolom yang memberikan hasil kategorikal tidak dapat diketahui korelasinya.
 
@@ -109,7 +109,7 @@ Pada tahap *Data Understanding* dilakukan analisis data eksploratif untuk mendap
 
 Teknik data preparation yang dilakukan pada proyek ini adalah sebagai berikut : 
 
-1. Feature Selection : Melakukan seleksi fitur untuk menyeleksi kolom yang berperan sebagai data fitur dan kolom yang menjadi data label.
+1. Feature Selection: Melakukan seleksi fitur untuk menyeleksi kolom yang berperan sebagai data fitur dan kolom yang menjadi data label.
 
 2. Data Splitting: Membagi dataset menjadi data latih dan data uji. Pada proyek ini perbandingan data latih dan data uji adalah 85 : 15.
 
@@ -122,9 +122,9 @@ Teknik data preparation yang dilakukan pada proyek ini adalah sebagai berikut :
 
 Pada tahap ini dilakukan proses pelatihan untuk mendapatkan model dengan performa terbaik. Tahapan yang dilakukan pada proses Modelling adalah sebagai berikut.
 
-1. Memprediksi algoritma dengan performa terbaik menggunakan Lazy Predict
+1. Memprediksi algoritma dengan performa terbaik menggunakan *Lazy Predict*
 
-   Lazy Predict adalah library Python yang membantu dalam membuat model *machine learning* dengan cepat dan mudah. Library ini dikembangkan untuk mempercepat proses eksplorasi data dan pemodelan awal. Hasil dari proses pelatihan yang dilakukan Lazy Predict ditunjukan pada Tabel 2.
+   *Lazy Predict* adalah library Python yang membantu dalam membuat model *machine learning* dengan cepat dan mudah. Library ini dikembangkan untuk mempercepat proses eksplorasi data dan pemodelan awal. Hasil dari proses pelatihan yang dilakukan *Lazy Predict* ditunjukan pada Tabel 2.
 
    <div style="text-align:center">Tabel 2. Hasil Perbandingan model menggunakan Lazy Predict</div>
 
@@ -141,7 +141,7 @@ Pada tahap ini dilakukan proses pelatihan untuk mendapatkan model dengan perform
    | **ExtraTreesRegressor**           | 0.829              | 0.838     | 0.246 | 0.19       |
    | **KNeighborsRegressor**           | 0.802              | 0.812     | 0.265 | 0.01       |
    
-   Algoritma dengan performa terbaik dilihat dari nilai R-Square dan RMSE. Semakin besar nilai R-Square (mendekati 1) maka model semakin akurat. Sedangkan pada RMSE, apabila nilai semain kecil (mendekati 0), maka akurasi model akan semakin tinggi. Berdasarkan hasil R-Square dan RMSE menggunakan Lazy Predict pada Tabel 1, disimpulkan bahwa algoritma terbaik yang akan digunakan untuk mempredikasi harga adalah **XGBRegressor**.
+   Algoritma dengan performa terbaik dilihat dari nilai R-Square dan RMSE. Semakin besar nilai R-Square (mendekati 1) maka model semakin akurat. Sedangkan pada RMSE, apabila nilai semain kecil (mendekati 0), maka akurasi model akan semakin tinggi. Berdasarkan hasil R-Square dan RMSE menggunakan *Lazy Predict* pada Tabel 1, disimpulkan bahwa algoritma terbaik yang akan digunakan untuk mempredikasi harga adalah **XGBRegressor**.
    
 2. Menggunakan `ColumnTransformer` untuk mengubah data kategorik menjadi numerik
 
@@ -151,7 +151,7 @@ Pada tahap ini dilakukan proses pelatihan untuk mendapatkan model dengan perform
 
    Hasil penggunakan teknik `ColumnTransformer` disimpan dalam objek feature. Selanjutnya dilakukan proses pipeline untuk menggabungkan dan meng-optimasi kolom numerikal dan kategorikal agar dapat di proses oleh algoritma machine learning. 
 
-4. Setelah dilakukan proses pelatihan oleh Lazy Predict, diperoleh algoritma dengan performa terbaik yaitu :
+4. Setelah dilakukan proses pelatihan oleh *Lazy Predict*, diperoleh algoritma dengan performa terbaik yaitu :
 
    - **XGBRegressor**
 
@@ -168,7 +168,7 @@ Pada tahap ini dilakukan proses pelatihan untuk mendapatkan model dengan perform
    
 5. Menambahkan parameter tunning untuk mengingkatkan performa model
 
-   Penambahan parameter menggunakan **Teknik Grid Search**. Sehingga diperoleh hyperparameter dari algoritma adalah sebagai berikut.
+   Penambahan parameter menggunakan **Teknik GridSearch**. Sehingga diperoleh hyperparameter dari algoritma adalah sebagai berikut.
 
    - Parameter XGBRegressor
    
@@ -249,8 +249,8 @@ Pada tahap ini dilakukan proses pelatihan untuk mendapatkan model dengan perform
 
 1. Berdasarkan hasil pengukuran, terdapat 8 kolom atau fitur yang mempengaruhi *Price* yaitu Manufacturer, CPU, RAM, Storage, GPU, OS, Weight, dan PPI.
 2. Proses preprocessing yang dilakukan adalah dengan melakukan manipulasi data seperti mengabungkan ScreenX dan ScreenX untuk menghasilkan fitur baru yaitu PPI. Menghapus data yang tidak memiliki korelasi yang signifikan dengan *Price*, dan mengubah format tipe data pada setiap kolom yang memiliki korelasi.
-3. Berdasarkan hasil pengujian model, diperoleh hasil bahwa algoritma XGBRegressor memiliki performa yang baik dengan nilai RMSE sebesar 0.4559351 dan R^2 Score sebesar 0.4463952.
-4. Meningkatkan performa model dapat dilakukan dengan menambahkan hyperparameter.  Pemilihan hyperparameter yang menghasilkan performa terbaik dapat dilakukan menggunakan teknik Grid Search.
+3. Berdasarkan hasil pengujian model, diperoleh hasil bahwa algoritma XGBRegressor memiliki performa yang baik dengan nilai RMSE sebesar 0.2477674 dan R^2 Score sebesar 0.8365134.
+4. Meningkatkan performa model dapat dilakukan dengan menambahkan hyperparameter.  Pemilihan hyperparameter yang menghasilkan performa terbaik dapat dilakukan menggunakan teknik GridSearch.
 5. Dataset yang digunakan memiliki rentang jangkauan yang berbeda (imbalace), oleh sebab itu agar performa model lebih baik maka perlu dilakukan teknik SMOTE untuk menangani imbalance dataset.
 
 ## Referensi
