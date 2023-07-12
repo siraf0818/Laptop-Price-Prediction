@@ -128,18 +128,18 @@ Pada tahap ini dilakukan proses pelatihan untuk mendapatkan model dengan perform
 
    <div style="text-align:center">Tabel 2. Hasil Perbandingan model menggunakan Lazy Predict</div>
 
-   | Model                             | Adjusted R-Squared | R-Squared | RMSE | Time Taken |
-   | --------------------------------- | ------------------ | --------- | ---- | ---------- |
-   | **XGBRegressor**                  | 0.86               | 0.87      | 0.22 | 0.08       |
-   | **SVR**                           | 0.86               | 0.86      | 0.23 | 0.05       |
-   | **NuSVR**                         | 0.85               | 0.86      | 0.23 | 0.05       |
-   | **RandomForestRegressor**         | 0.85               | 0.86      | 0.23 | 0.23       |
-   | **GradientBoostingRegressor**     | 0.85               | 0.86      | 0.23 | 0.08       |
-   | **HistGradientBoostingRegressor** | 0.84               | 0.85      | 0.24 | 0.46       |
-   | **ExtraTreesRegressor**           | 0.84               | 0.85      | 0.24 | 0.23       |
-   | **LGBMRegressor**                 | 0.84               | 0.85      | 0.24 | 0.09       |
-   | **BaggingRegressor**              | 0.83               | 0.84      | 0.25 | 0.03       |
-   | **KNeighborsRegressor**           | 0.80               | 0.81      | 0.27 | 0.02       |
+   | Model                             | Adjusted R-Squared | R-Squared | RMSE  | Time Taken |
+   | --------------------------------- | ------------------ | --------- | ----- | ---------- |
+   | **XGBRegressor**                  | 0.859              | 0.866     | 0.222 | 0.06       |
+   | **SVR**                           | 0.855              | 0.863     | 0.226 | 0.03       |
+   | **NuSVR**                         | 0.854              | 0.862     | 0.227 | 0.04       |
+   | **RandomForestRegressor**         | 0.849              | 0.858     | 0.230 | 0.20       |
+   | **GradientBoostingRegressor**     | 0.848              | 0.856     | 0.231 | 0.07       |
+   | **HistGradientBoostingRegressor** | 0.840              | 0.849     | 0.237 | 0.45       |
+   | **LGBMRegressor**                 | 0.837              | 0.846     | 0.240 | 0.08       |
+   | **BaggingRegressor**              | 0.829              | 0.838     | 0.245 | 0.03       |
+   | **ExtraTreesRegressor**           | 0.829              | 0.838     | 0.246 | 0.19       |
+   | **KNeighborsRegressor**           | 0.802              | 0.812     | 0.265 | 0.01       |
    
    Algoritma dengan performa terbaik dilihat dari nilai R-Square dan RMSE. Semakin besar nilai R-Square (mendekati 1) maka model semakin akurat. Sedangkan pada RMSE, apabila nilai semain kecil (mendekati 0), maka akurasi model akan semakin tinggi. Berdasarkan hasil R-Square dan RMSE menggunakan Lazy Predict pada Tabel 1, disimpulkan bahwa algoritma terbaik yang akan digunakan untuk mempredikasi harga adalah **XGBRegressor**.
    
@@ -225,7 +225,7 @@ Pada tahap ini dilakukan proses pelatihan untuk mendapatkan model dengan perform
 
   | id   | Model_Name   | MSE       | R2 Score  | RMSE      |
   | ---- | ------------ | --------- | --------- | --------- |
-  | 0    | XGBRegressor | 0.2078768 | 0.4463952 | 0.4559351 |
+  | 0    | XGBRegressor | 0.0613887 | 0.8365134 | 0.2477674 |
   
 - Membandingkan data sebenarnya dengan hasil prediksi. Hasil perbandingan dapat dilihat pada Tabel 4.
 
@@ -233,17 +233,17 @@ Pada tahap ini dilakukan proses pelatihan untuk mendapatkan model dengan perform
   
   | Id      | y_true     | **prediksi_XGB** |
   | :------ | :--------- | :--------------- |
-  | **966** | 21.0168476 | 20.6000004       |
-  | **879** | 21.0336742 | 20.8999996       |
-  | **436** | 20.1507893 | 20.5000000       |
-  | **970** | 21.8505459 | 21.7000008       |
-  | **261** | 20.3972893 | 21.0000000       |
+  | **966** | 21.0168476 | 20.8999996       |
+  | **879** | 21.0336742 | 20.7000008       |
+  | **436** | 20.1507893 | 20.2999992       |
+  | **970** | 21.8505459 | 22.0000000       |
+  | **261** | 20.3972893 | 20.2999992       |
   | ...     | ...        | ...              |
-  | **54**  | 20.2521057 | 20.2999992       |
-  | **34**  | 21.2072182 | 21.7000008       |
-  | **434** | 22.1048985 | 21.0000000       |
-  | **30**  | 19.8026810 | 21.5000000       |
-  | **862** | 21.4599781 | 21.3999996       |
+  | **54**  | 20.2521057 | 20.5000000       |
+  | **34**  | 21.2072182 | 21.3999996       |
+  | **434** | 22.1048985 | 22.0000000       |
+  | **30**  | 19.8026810 | 19.7999992       |
+  | **862** | 21.4599781 | 21.0000000       |
 
 ## Conclussion
 
@@ -261,7 +261,7 @@ Pada tahap ini dilakukan proses pelatihan untuk mendapatkan model dengan perform
 
 [3]   Kolla,  Venkata Ravi Kiran, "Forecasting Laptop Prices: A Comparative  Study of Machine Learning Algorithms for Predictive Modeling," 2016,  SSRN: [4413726](https://papers.ssrn.com/sol3/Delivery.cfm/SSRN_ID4413726_code5831378.pdf?abstractid=4413726&mirid=1).
 
-
+[4]   kaggle, “An introduction to XGBoost regression,” 2023. [Online]. Available: [https://www.kaggle.com](https://www.kaggle.com/code/carlmcbrideellis/an-introduction-to-xgboost-regression).
 
 
 
