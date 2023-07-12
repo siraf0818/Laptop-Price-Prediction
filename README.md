@@ -20,7 +20,7 @@ Setiap tahun terdapat berbagai jenis tipe *laptop* dengan fitur yang bermacam-ma
 
 #### Problem Statements
 
-Tujuan yang hendak dicapai dari proyek ini adalah sebagai berikut :
+Tujuan yang hendak dicapai dari proyek ini adalah sebagai berikut:
 
 1. Fitur-fitur apa saja yang paling berpengaruh terhadap harga *laptop* ?
 2. Bagaimana proses *Pre-Processing* yang dilakukan agar menghasilkan model *machine learning* yang akurat?
@@ -28,7 +28,7 @@ Tujuan yang hendak dicapai dari proyek ini adalah sebagai berikut :
 
 #### Goals
 
-Tujuan yang hendak dicapai dari proyek ini adalah sebagai berikut :
+Tujuan yang hendak dicapai dari proyek ini adalah sebagai berikut:
 
 1. Mengetahui fitur yang paling berkorelasi dengan penentuan harga *laptop*.
 2. Membuat model *machine learning* yang dapat memprediksi harga *laptop*.
@@ -36,7 +36,7 @@ Tujuan yang hendak dicapai dari proyek ini adalah sebagai berikut :
 
 ####  Solution Statements
 
-Solusi yang diajukan untuk menyelesaikan masalah yang telah diuraikan adalah sebagai berikut.
+Solusi yang diajukan untuk menyelesaikan masalah yang telah diuraikan adalah sebagai berikut:
 
 1. Melakukan analisis deskriptif untuk mengetahui pola dan informasi yang tersimpan di data mengenai fitur atau spesifikasi yang mempengaruhi harga *laptop*.
 2. Melakukan proses *Data Manipulation* untuk menggabungkan kolom-kolom yang berpengaruh terhadap akurasi predisi harga *laptop*
