@@ -1,4 +1,4 @@
-# Laporan Akhir Kecerdasan Buatan
+![image](https://github.com/siraf0818/Laptop-Price-Prediction/assets/81822076/6cfa1794-c35c-4803-aa33-99f233a88681)# Laporan Akhir Kecerdasan Buatan
 
 **Anggota Kelompok :**
 
@@ -188,9 +188,9 @@ Pada tahap ini dilakukan proses pelatihan untuk mendapatkan model dengan perform
 - Metrik evaluasi yang digunakan adalah *Mean Square Error* (MSE), *Root Mean Square Error* (RMSE), dan *R Square* (R2 Score)
 
 - MSE melakukan pengurangan nilai data aktual dengan data peramalan dan hasilnya dikuadratkan (*squared*) kemudian dijumlahkan secara keseluruhan dan membaginya dengan banyaknya data yang ada. Rumus dari MSE adalah sebagai berikut 
-  $$
+  ```math
   MSE = \frac{1}{n} \Sigma_{i=1}^n({y}-\hat{y})^2
-  $$
+  ```
   Diketahui:
 
   - n = Jumlah Data
@@ -198,9 +198,9 @@ Pada tahap ini dilakukan proses pelatihan untuk mendapatkan model dengan perform
   - ŷi = *Predicted Value* / Nilai Prediksi
 
 - RMSE adalah jumlah dari kesalahan kuadrat atau selisih antara nilai sebenarnya dengan nilai prediksi yang telah ditentukan. Cara menghitungnya tinggal mengakar kan mse menggunakan fungsi *np.sqrt*. Rumus dari RMSE adalah sebagai berikut.
-  $$
+  ```math
   RMSE = \sqrt{(\frac{1}{n})\sum_{i=1}^{n}(y_{i} - x_{i})^{2}}
-  $$
+  ```
   Diketahui:
 
   - n = Jumlah Data
@@ -208,9 +208,9 @@ Pada tahap ini dilakukan proses pelatihan untuk mendapatkan model dengan perform
   - ŷi = *Predicted Value* / Nilai Prediksi
 
 - R2 Score dijadikan sebagai pengukuran seberapa baik garis regresi mendekati nilai data asli yang dibuat melalui model. Rumus dari R2 Score adalah sebagai berikut.
-  $$
+  ```math
   R^2 = 1 - {SS_R \over SS_T} =  1 - {\sum_{i} (y_i - ŷ_p) ^ 2 \over \sum_{i} (y_i - ȳ) ^ 2}
-  $$
+  ```
 
   - SSR : Kuadrat dari selisih nilai Y prediksi dengan nilai rata-rata Y = ∑ (Ypred – Yrata-rata)²
   - SST : Kuadrat dari selisih nilai Y aktual dengan nilai rata-rata Y = ∑ (Yaktual – Yrata-rata)²
