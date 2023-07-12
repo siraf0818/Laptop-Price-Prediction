@@ -1,9 +1,9 @@
-# Laporan Akhir Kecerdasan Buatan - Kelompok 1
+# Laporan Akhir Kecerdasan Buatan
 
 **Anggota Kelompok :**
 
-1. Faris Adhi Laksana Yusuf	-	3.34.21.3.09
-2. Febrian Giovanni                  -    3.34.21.3.10
+1. Faris Adhi Laksana Yusuf	-	 3.34.21.3.09
+2. Febrian Giovanni           -   3.34.21.3.10
 
 ## Domain Proyek
 
@@ -16,7 +16,7 @@ Untuk mengatasi permasalahan tersebut, metode Machine Learning diperlukan untuk 
 
 ## Business Understanding
 
-Setiap tahun terdapat berbagai jenis tipe *laptop* dengan fitur yang bermacam-macam. Umumnya *laptop* tipe tertentu meng-*upgrade* perangkatnya dari segi penambahan kapasitas RAM, kartu grafis dan kapasitas penyimpanan, serta kecepatan prosesor. Penambahan fitur pada *laptop* akan mempengaruhi kenaikan harga *laptop* tersebut. Oleh karena itu calon konsumen harus memahami spesifikasi *laptop* yang akan dibeli disesuaikan dengan budget yang dimiliki. Diperlukan sebuah model *machine learning* yang dapat memprediksi harga *laptop* dengan akurat. Sehingga calon konsumen dapat menyiapkan budget yang diperlukan untuk membeli *laptop* dengan spesifikasi yang dia inginkan.
+Setiap tahun terdapat berbagai jenis tipe *laptop* dengan fitur yang bermacam-macam. Umumnya *laptop* tipe tertentu meng-*upgrade* perangkatnya dari segi penambahan kapasitas RAM, kartu grafis, kapasitas penyimpanan, dan kecepatan prosesor. Penambahan fitur pada *laptop* akan mempengaruhi kenaikan harga *laptop* tersebut. Oleh karena itu calon konsumen harus memahami spesifikasi *laptop* yang akan dibeli disesuaikan dengan budget yang dimiliki. Diperlukan sebuah model *machine learning* yang dapat memprediksi harga *laptop* dengan akurat. Sehingga calon konsumen dapat menyiapkan budget yang diperlukan untuk membeli *laptop* dengan spesifikasi yang dia inginkan.
 
 #### Problem Statements
 
@@ -32,7 +32,7 @@ Tujuan yang hendak dicapai dari proyek ini adalah sebagai berikut :
 
 1. Mengetahui fitur yang paling berkorelasi dengan penentuan harga *laptop*.
 2. Membuat model *machine learning* yang dapat memprediksi harga *laptop*.
-3. Memilih model *machine learning* yang menghasilkan prediksi paling akurat berdasarkan proses *preprocessing* yang dilakukan
+3. Memilih model *machine learning* yang menghasilkan prediksi paling akurat berdasarkan proses *preprocessing* yang dilakukan.
 
 ####  Solution Statements
 
@@ -93,7 +93,7 @@ Pada tahap *Data Understanding* dilakukan analisis data eksploratif untuk mendap
 
   <img width="1000" alt="heatmap" src="https://github.com/siraf0818/Laptop-Price-Prediction/assets/116758794/d7dbb96a-e9c5-4097-84b0-f737fafef2d8">
   
-  <div style="text-align:center">Gambar 1. Visualisasi Korelasi Data dengan Heatmap</div>
+  <div style="text-align:center, justify-content:center">Gambar 1. Visualisasi Korelasi Data dengan Heatmap</div>
   
   Sedangkan contoh visualisasi dari sebaran data ditunjukan pada Gambar 2. Visualisasi yang ditunjukan pada Gambar 2 menunjukan bahwa ada ketidakseimbangan data pada kolom CPU, Storage, Weight, RAM, dan PPI.
   
