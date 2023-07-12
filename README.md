@@ -249,7 +249,7 @@ Pada tahap ini dilakukan proses pelatihan untuk mendapatkan model dengan perform
 
 1. Berdasarkan hasil pengukuran, terdapat 8 kolom atau fitur yang mempengaruhi *Price* yaitu Manufacturer, CPU, RAM, Storage, GPU, OS, Weight, dan PPI.
 2. Proses preprocessing yang dilakukan adalah dengan melakukan manipulasi data seperti mengabungkan ScreenX dan ScreenX untuk menghasilkan fitur baru yaitu PPI. Menghapus data yang tidak memiliki korelasi yang signifikan dengan *Price*, dan mengubah format tipe data pada setiap kolom yang memiliki korelasi.
-3. Berdasarkan hasil pengujian model, diperoleh hasil bahwa algoritma XGBRegressor memiliki performa yang baik dengan nilai RMSE sebesar 0.4559351 dan R2 Score sebesar 0.4463952.
+3. Berdasarkan hasil pengujian model, diperoleh hasil bahwa algoritma XGBRegressor memiliki performa yang baik dengan nilai RMSE sebesar 0.4559351 dan R^2 Score sebesar 0.4463952.
 4. Meningkatkan performa model dapat dilakukan dengan menambahkan hyperparameter.  Pemilihan hyperparameter yang menghasilkan performa terbaik dapat dilakukan menggunakan teknik Grid Search.
 5. Dataset yang digunakan memiliki rentang jangkauan yang berbeda (imbalace), oleh sebab itu agar performa model lebih baik maka perlu dilakukan teknik SMOTE untuk menangani imbalance dataset.
 
