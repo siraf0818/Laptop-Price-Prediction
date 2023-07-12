@@ -1,4 +1,4 @@
-![image](https://github.com/siraf0818/Laptop-Price-Prediction/assets/81822076/6cfa1794-c35c-4803-aa33-99f233a88681)# Laporan Akhir Kecerdasan Buatan
+# Laporan Akhir Kecerdasan Buatan
 
 **Anggota Kelompok :**
 
