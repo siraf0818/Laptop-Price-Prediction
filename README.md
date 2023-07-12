@@ -97,9 +97,9 @@ Pada tahap *Data Understanding* dilakukan analisis data eksploratif untuk mendap
   
   Sedangkan contoh visualisasi dari sebaran data ditunjukan pada Gambar 2. Visualisasi yang ditunjukan pada Gambar 2 menunjukan bahwa ada ketidakseimbangan data pada kolom CPU, Storage, Weight, RAM, dan PPI.
   
-  ![image-20230711192726048](https://github.com/siraf0818/Laptop-Price-Prediction/assets/81822076/f1dfd3d9-395a-4a8f-be18-f95e1b56b553)
+  <img width="1000" alt="kolom1" src="https://github.com/siraf0818/Laptop-Price-Prediction/assets/116758794/611c822d-e134-4e71-b295-58ea8f1737ca">
   
-  ![image-20931](https://github.com/siraf0818/Laptop-Price-Prediction/assets/81822076/495b85ab-c34e-4ebc-baf4-2fdaba13570e)
+  <img width="1000" alt="kolom2" src="https://github.com/siraf0818/Laptop-Price-Prediction/assets/116758794/23046370-29c9-4dd7-81cf-f21f2fbc7783">
   
   <div style="text-align:center">Gambar 2. Visualisasi Data pada Dataset</div>
 
