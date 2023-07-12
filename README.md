@@ -91,7 +91,7 @@ Pada tahap *Data Understanding* dilakukan analisis data eksploratif untuk mendap
 
 - Melakukan visualisasi data untuk mengetahui korelasi dan sebaran data. Visualisasi korelasi antar kolom digambarkan dalam heatmap seperti ditunjukan Gambar 1. Berdasarkan diagaram heatmap Gambar 1 diketahui bahawa terdapat beberapa kolom seperti Weight, CPU, RAM, dll yang berkorelasi dengan kolom 'Price'.  Semakin mendekati nilai 1 maka korelasi semakin tinggi. Kemudian hasil visualisasi heatmap hanya menampilkan korelasi pada kolom yang memberikan data numerikal, sedangkan kolom yang memberikan hasil kategorikal tidak dapat diketahui korelasinya.
 
-  <img width="800" alt="heatmap" src="https://github.com/siraf0818/Laptop-Price-Prediction/assets/116758794/d7dbb96a-e9c5-4097-84b0-f737fafef2d8">
+  <img width="1000" alt="heatmap" src="https://github.com/siraf0818/Laptop-Price-Prediction/assets/116758794/d7dbb96a-e9c5-4097-84b0-f737fafef2d8">
   
   <div style="text-align:center">Gambar 1. Visualisasi Korelasi Data dengan Heatmap</div>
   
